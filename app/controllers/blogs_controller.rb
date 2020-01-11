@@ -4,6 +4,7 @@ class BlogsController < ApplicationController
   end
 
   def show
+  	@blog = Brog.find(params[:id])
   end
 
   def new
